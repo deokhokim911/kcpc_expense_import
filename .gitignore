@@ -1,0 +1,8 @@
+.DS_Store
+
+# local env files
+.env
+.env.*
+scripts/run_all_imports.env
+
+*.log

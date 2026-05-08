@@ -1,0 +1,358 @@
+Successfully connected!
+>>>  {2025 0 {0 63870768000 <nil>} 0 3310 0 0-3310-0 TR-3 Kwonsa Group  FundTransfer  | Asset transfer out 400 0 3663.18  -400 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 3580 0 0-3580-0 TR-Short Term Mission  JournalEntry  | Transfer from GL#190: Childcare for Soonjang Retreat 0 300 28672.71  300 0}
+>>>  {2025 0 {0 63870768000 <nil>} 0 3590 0 0-3590-0 TR-Small Grp Mission Offering  FundTransfer  | Asset transfer in 0 400 3407.95  400 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 50 50  50 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 50 100  50 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 300 400  300 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4300 0 0-4300-0 Fellowship 164727 Bill Dough Factory, LLC | Donut Tray x2 - 11/3/24 96 0 304  -96 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 50 354  50 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Online offering accrual - Fellowship 0 200 554  200 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 50 604  50 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Online offering accrual - Fellowship 0 204.7 808.7  204.7 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 50 858.7  50 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Online offering accrual - Fellowship 0 200 1058.7  200 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Online offering accrual - Fellowship 0 10 1068.7  10 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 110 1178.7  110 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Contribution Fellowship 0 100 1278.7  100 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4300 0 0-4300-0 Fellowship  JournalEntry  | Online offering accrual - Fellowship 0 1000 2278.7  1000 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 60 60  60 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 30 90  30 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 190 280  190 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Online offering accrual - Chapel Pulpit Flower 0 30.3 310.3  30.3 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Online offering accrual - Chapel Pulpit Flower 0 30 340.3  30 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 150 490.3  150 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 100 590.3  100 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Online offering accrual - Chapel Pulpit Flower 0 100 690.3  100 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 90 780.3  90 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Online offering accrual - Chapel Pulpit Flower 0 30.3 810.6  30.3 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 160 970.6  160 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 70 1040.6  70 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 30 1070.6  30 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 290 1360.6  290 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Contribution Chapel Pulpit Flower 0 100 1460.6  100 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4310 0 0-4310-0 Flowers  JournalEntry  | Online offering accrual - Chapel Pulpit Flower 0 30.3 1490.9  30.3 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4340 0 0-4340-0 KCPC Central Music Academy  JournalEntry  | CMA Registration Fee 0 2560 2560  2560 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4340 0 0-4340-0 KCPC Central Music Academy  JournalEntry  | CMA Registration Fee 0 3668 6228  3668 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4340 0 0-4340-0 KCPC Central Music Academy  JournalEntry  | CMA Registration Fee 0 16549 22777  16549 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4340 0 0-4340-0 KCPC Central Music Academy  JournalEntry  | CMA Registration Fee 0 200 22977  200 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4340 0 0-4340-0 KCPC Central Music Academy  JournalEntry  | CMA Tuition 0 660 23637  660 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4340 0 0-4340-0 KCPC Central Music Academy  JournalEntry  | Central Music Academy 0 8 23645  8 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4360 0 0-4360-0 Missionary Scholarship  JournalEntry  | Online offering accrual - MK Scholarship 0 20 20  20 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4390 0 0-4390-0 Short Term Mission  JournalEntry  | Kenya Medical STM 0 500 500  500 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4390 0 0-4390-0 Short Term Mission  JournalEntry  | Contribution STM - Kenya Medical 0 1000 1500  1000 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4390 0 0-4390-0 Short Term Mission  JournalEntry  | Kenya Medical STM 0 1600 3100  1600 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4390 0 0-4390-0 Short Term Mission 241103-53 Bill Byong K Cho | STM-Medical Kenya: Fund Balance 1100 0 2000  -1100 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4390 0 0-4390-0 Short Term Mission  JournalEntry  | Kenya Medical STM 0 500 2500  500 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4390 0 0-4390-0 Short Term Mission    | Wedding Clean-up: Kingdom STM 0 500 3000  500 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4390 0 0-4390-0 Short Term Mission  JournalEntry  | Contribution STM - Kenya Medical 0 300 3300  300 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4390 0 0-4390-0 Short Term Mission  JournalEntry  | Contribution STM - Compassion 0 5000 8300  5000 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 4070 4070  4070 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 590 4660  590 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 1710 6370  1710 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 1290 7660  1290 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 1175 8835  1175 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 3155 11990  3155 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 680 12670  680 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 1760 14430  1760 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 1740 16170  1740 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 3560 19730  3560 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 1043 20773  1043 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 26150 46923  26150 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 7095 54018  7095 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 100 54118  100 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4400 0 0-4400-0 Ind Designated Mission Offering  JournalEntry  | Contribution Mission Individual Designated 0 10 54128  10 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 670 670  670 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 20 690  20 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 110 800  110 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 850 1650  850 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 5.07 1655.07  5.07 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 2615 4270.07  2615 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 645 4915.07  645 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 10 4925.07  10 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 50 4975.07  50 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 2585 7560.07  2585 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 2070 9630.07  2070 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 170.07 9800.14  170.07 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 55.07 9855.21  55.07 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 1850 11705.21  1850 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 835 12540.21  835 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 140.05 12680.26  140.05 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 75.07 12755.33  75.07 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 1685 14440.33  1685 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 1385 15825.33  1385 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 240.07 16065.4  240.07 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 195.36 16260.76  195.36 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 2515 18775.76  2515 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 1455 20230.76  1455 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 65.06 20295.82  65.06 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 3025 23320.82  3025 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Contribution Mission Small Group 0 80 23400.82  80 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 310.36 23711.18  310.36 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4410 0 0-4410-0 Small Group Mission Offering  JournalEntry  | Online offering accrual - Small Group 0 60 23771.18  60 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4420 0 0-4420-0 Seminary School Scholarship  JournalEntry  | Online offering accrual - Seminary Student Scholar 0 50200.09 50200.09  50200.09 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 580 580  580 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 170 750  170 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 100 850  100 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 100 950  100 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 220 1170  220 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 160 1330  160 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 80 1410  80 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 160 1570  160 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 40 1610  40 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 115 1725  115 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 40 1765  40 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 130 1895  130 0}
+>>>  {2025 0 {0 63870768000 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution for Kids Winter Shoes 0 500 2395  500 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4430 0 0-4430-0 North Korea Mission  JournalEntry  | Contribution Mission-N. Korea 0 120 2515  120 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4430 0 0-4430-0 North Korea Mission    | Contribution Mission-N. Korea Kids Winter Shoes 0 3680 6195  3680 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Relief 0 150 150  150 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for CMA 0 300 450  300 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4460 0 0-4460-0 Special Contributions    | Contribution for The Sent School 0 16000 16450  16000 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Relief 0 50 16500  50 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Relief 0 150 16650  150 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Baby Bible for  New Baby Blessing Prayer 0 400 17050  400 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Online offering accrual - Thanks for Appointment 0 500.3 17550.3  500.3 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Relief 0 50 17600.3  50 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Homeless X-mas Gift 0 1610 19210.3  1610 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Amazon Seminary 0 200 19410.3  200 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4460 0 0-4460-0 Special Contributions    | Contribution for Homeless X-mas Gift 0 1400 20810.3  1400 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Homeless X-mas Gift 0 340 21150.3  340 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4460 0 0-4460-0 Special Contributions    | Contribution for Relief 0 70 21220.3  70 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Homeless X-mas Gift 0 970 22190.3  970 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4460 0 0-4460-0 Special Contributions    | Contribution for Relief 0 250 22440.3  250 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4460 0 0-4460-0 Special Contributions    | Contribution for Sojourn Friendgiving Event 0 500 22940.3  500 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Homeless X-mas Gift 0 2565 25505.3  2565 0}
+>>>  {2025 0 {0 63870768000 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Homeless 0 500 26005.3  500 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Homeless X-mas Gift 0 755 26760.3  755 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Goodneighbor 0 1000 27760.3  1000 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4460 0 0-4460-0 Special Contributions  JournalEntry  | Contribution for Honda Tax 0 1399.36 29159.66  1399.36 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4460 0 0-4460-0 Special Contributions    | Contribution for Turkiye Mission Conference Coffee Team 0 500 29659.66  500 0}
+>>>  {2025 0 {0 63863769600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 250 250  250 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Bldg Fund 0 801.82 1051.82  801.82 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Bldg Fund 0 10900 11951.82  10900 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Bldg Fund 0 234.27 12186.09  234.27 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Bldg Fund 0 740 12926.09  740 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 2812 15738.09  2812 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Bldg Fund 0 3730.75 19468.84  3730.75 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 4601.28 24070.12  4601.28 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 102860 126930.12  102860 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 188789 315719.12  188789 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 48269.31 363988.43  48269.31 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 14218.09 378206.52  14218.09 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 60772 438978.52  60772 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 34024 473002.52  34024 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 3171.96 476174.48  3171.96 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 5561.81 481736.29  5561.81 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Chargeback: A1-2  Young Ja Lee (Refer to Maker) 5000 0 476736.29  -5000 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions    | Chargeback: A6578-1 Justin D Kim (Closed Acct) 200 0 476536.29  -200 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 31475 508011.29  31475 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 20515 528526.29  20515 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 11231.2 539757.49  11231.2 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 22149.27 561906.76  22149.27 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 33847 595753.76  33847 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 26156 621909.76  26156 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 11704.34 633614.1  11704.34 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 64798 698412.1  64798 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 125000 823412.1  125000 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Contribution Blessing Park Bldg Fund 0 13399 836811.1  13399 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Offering accrual - Blessing Park Bldg Fund 0 2000 838811.1  2000 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 47609.09 886420.19  47609.09 0}
+>>>  {2025 0 {0 63871200000 <nil>} 0 4510 0 0-4510-0 Vision 123 Contributions  JournalEntry  | Online offering accrual - Blessing Park Bldg Fund 0 2100.3 888520.49  2100.3 0}
+>>>  {2025 0 {0 63863424000 <nil>} 0 5180 0 0-5180-0 Books and Materials  JournalEntry  | Transfer to GL#255: D6 Book Sales by Stripe 4034.6 0 4034.6  4034.6 0}
+>>>  {2025 0 {0 63863424000 <nil>} 0 5180 0 0-5180-0 Books and Materials    | Transfer from GL#3610: D6 Book Sales by Stripe 0 4034.6 0  -4034.6 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5180 0 0-5180-0 Books and Materials 139276 Bill Washington Christian Book Center | Concone 50 (x15) 165 0 165  165 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5180 0 0-5180-0 Books and Materials 000824090076 Bill Westminster Press Korea | Reading Jesus Book (x216) 5147.61 0 5312.61  5147.61 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 5180 0 0-5180-0 Books and Materials  JournalEntry  | Reading Jesus Book Fee 0 5570 -257.39  -5570 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5300 0 0-5300-0 Awards and Prizes 2412-05 Bill Vineyard Engravers, Inc | Central Music Academy Trophy x38 370.5 0 370.5  370.5 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 16427 Bill Boas Promotion | Magnet for Blessing Park Prayer List 693.5 0 693.5  693.5 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 16468 Bill Boas Promotion | Magnet for Blessing Park Prayer List (x5000) 2988.5 0 3682  2988.5 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241117-51 Bill Rebekah Woo | 2024 Homeless Gift - Winter Jacket x10 243.69 0 3925.69  243.69 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241117-52 Bill Hannah Choi | 2024 Homeless Gift - Winter Jacket x10 243.69 0 4169.38  243.69 0}
+>>>  {2025 0 {0 63867657600 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation  Check VISA | Baby Bible for  New Baby Blessing Prayer 399.6 0 4568.98  399.6 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-03 Bill Hubert Kwon | 2024 X-mas Homeless Winter Jacket *10 243.69 0 4812.67  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-05 Bill Yoon Joo Lim | 2024 X-mas Homeless Winter Jacket *10 243.69 0 5056.36  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-06 Bill Seungyeun Cha | 2024 X-mas Homeless Winter Jacket *10 243.69 0 5300.05  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-07 Bill Mina Kim | 2024 X-mas Homeless Winter Jacket *10 243.69 0 5543.74  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-08 Bill Seung Pu Peck | 2024 X-mas Homeless Winter Jacket *10 243.69 0 5787.43  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-09 Bill Ju Yeon Chang | 2024 X-mas Homeless Winter Jacket *10 243.69 0 6031.12  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-10 Bill Timothy Yoo | 2024 X-mas Homeless Winter Jacket *10 243.69 0 6274.81  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-11 Bill Ellie Eunjung Suh | 2024 X-mas Homeless Winter Jacket *10 243.69 0 6518.5  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-21 Bill Byung Sik Kang | 2024 X-mas Homeless Winter Jacket *10 243.69 0 6762.19  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-22 Bill Byong K Cho | 2024 X-mas Homeless Winter Jacket *10 243.69 0 7005.88  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-39 Bill Jessica Blanton | 2024 X-mas Homeless Winter Jacket *10 - order 1152096211 243.69 0 7249.57  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-40 Bill Eun Yung Hong | 2024 X-mas Homeless Winter Jacket *10 - order 1151653464 243.69 0 7493.26  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-41 Bill Hearan Kang | 2024 X-mas Homeless Winter Jacket *10 - order 1151515536 243.69 0 7736.95  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-42 Bill Jessica Kim | 2024 X-mas Homeless Winter Jacket *10 - order 1152984668 243.69 0 7980.64  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-44 Bill Connie Chong | 2024 X-mas Homeless Winter Jacket *10 - order 1152300022 243.69 0 8224.33  243.69 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241124-66 Bill Ha Young Choi | 2024 X-mas Homeless Winter Jacket *10 243.69 0 8468.02  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-46 Bill Guang Y. Weon | Homeless Winter Jackets 243.69 0 8711.71  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-61 Bill Jessica Blanton | 2024 X-mas Homeless Gift: Card 116.48 0 8828.19  116.48 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation   Jessica Blanton | 2024 X-mas Homeless Gift: Wrapping Paper 79.45 0 8907.64  79.45 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-62 Bill Jessica Blanton | 2024 X-mas Homeless Gift: Tote Bag 585 0 9492.64  585 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-63 Bill Paul Jeong | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 9736.33  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-64 Bill Jin Kim | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 9980.02  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-72 Bill Kyungho Kim | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 10223.71  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-73 Bill Peter Kim | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 10467.4  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-74 Bill Chang Hyun Yoon | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 10711.09  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-75 Bill Kimberly Kim | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 10954.78  243.69 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241201-76 Bill Sunha Jang | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 11198.47  243.69 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241208-30 Bill Seung Pu Peck | 2024 X-mas Homeless Gift: Heat Pro Hand Warmers 296.59 0 11495.06  296.59 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241208-37 Bill Song Yon Pak | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 11738.75  243.69 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241215-08 Bill Jessica Blanton | 2024 X-mas Homeless Gift: Gloves x10 127.09 0 11865.84  127.09 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation   Jessica Blanton | 2024 X-mas Homeless Gift: Gloves x10, Inner Clothes x10 232.99 0 12098.83  232.99 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241215-09 Bill Ellie Eunjung Suh | 2024 Homeless Gift - Gloves x10 127.09 0 12225.92  127.09 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241215-10 Bill Jessica Blanton | 2024 X-mas Homeless Gifts - Toe Warmers x20 317.79 0 12543.71  317.79 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241215-13 Bill Lee Seob Park | Homeless X-mas Gift: Winter Jackets x10 243.69 0 12787.4  243.69 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241222-11 Bill Roger Pyon | 2024 Homeless Gift - Winter Jacket x10 243.69 0 13031.09  243.69 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241222-72 Bill Sandy L. Choi | Pastors & Staff X-Mas Gift: Apple Box 277.5 0 13308.59  277.5 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241222-73 Bill Ju Yeon Chang | 2024 X-mas Homeless Gift: Winter Jacket x60 1451.54 0 14760.13  1451.54 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241222-83 Bill Dae K Park | 2024 X-mas Homeless Gift: Winter Jacket x10 243.69 0 15003.82  243.69 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241229-19 Bill Yong Ki Kim | Coral Club Volunteer Gift Card x4 105.29 0 15109.11  105.29 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241229-23 Bill Seung Pu Peck | 2024 Homeless Gift - Christmas Gifts: Gloves x10, Pant x10 232.99 0 15342.1  232.99 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation   Seung Pu Peck | 2024 Homeless Gift - Christmas Gifts: Socks x20, Mandarin x16 316.67 0 15658.77  316.67 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation   Seung Pu Peck | 2024 Homeless Gift: Protein Bars x7 boxes 113.05 0 15771.82  113.05 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5330 0 0-5330-0 Gifts and Appreciation 241229-43 Bill Sujung Hwang | 2024 Homeless Gift - Winter Jacket*10 233.09 0 16004.91  233.09 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 164471 Bill Dough Factory, LLC | Donut Tray - 10/19/2024 (x2) 96 0 96  96 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 164484 Bill Dough Factory, LLC | Donut Tray - 10/20/2024 (x6) 288 0 384  288 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00137583 Bill Lotte Market | Grocery for Sunday Lunch - 10/18/24 728.47 0 1112.47  728.47 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 164608 Bill Dough Factory, LLC | Donut Tray x6 - 10/27/24 288 0 1400.47  288 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 001382599 Bill Lotte Market | Grocery for Sunday Lunch - 10/26/24 465.29 0 1865.76  465.29 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 174843 Bill Dough Factory, LLC | Donut tray X7 - 11/10/24 336 0 2201.76  336 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 532302 Bill Lotte Market | Grocery for Sunday Lunch 656.32 0 2858.08  656.32 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00140408 Bill Lotte Market | Grocery for Sunday Lunch - 11/16/24 243.85 0 3101.93  243.85 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00139825 Bill Lotte Market | Grocery for Sunday Lunch - 11/10/24 335.53 0 3437.46  335.53 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 174946 Bill Dough Factory, LLC | Donut Tray x2 - 11/16/24 96 0 3533.46  96 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 174957 Bill Dough Factory, LLC | Donut Tray x 7 - 11/17/24 336 0 3869.46  336 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175063 Bill Dough Factory, LLC | Donut Tray x 2 - 11/23/24 96 0 3965.46  96 0}
+>>>  {2025 0 {0 63868003200 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175071 Bill Dough Factory, LLC | Donut Tray x 9 - 11/24/24 432 0 4397.46  432 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175152 Bill Dough Factory, LLC | Donut Tray x6 - 12/1/24 288 0 4685.46  288 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00142090 Bill Lotte Market | Grocery for Sunday Lunch - 11/30/24 303.68 0 4989.14  303.68 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00142790 Bill Lotte Market | Grocery for Sunday Lunch - 12/8/24 390.85 0 5379.99  390.85 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175281 Bill Dough Factory, LLC | Donut Tray x 8 - 12/8/24 384 0 5763.99  384 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00143522 Bill Lotte Market | Grocery for Sunday Lunch - 12/14/24 678.27 0 6442.26  678.27 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175395 Bill Dough Factory, LLC | Donut Tray x 2 - 12/14/24 96 0 6538.26  96 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175407 Bill Dough Factory, LLC | Donut Tray x 8 - 12/15/24 384 0 6922.26  384 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 454625 Bill Regency Coffee & Supply, Inc. | Creamer 29.74 0 6952  29.74 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen   Regency Coffee & Supply, Inc. | RGY House Blend x7boxes 1176 0 8128  1176 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen   Regency Coffee & Supply, Inc. | Sugar 54.63 0 8182.63  54.63 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175522 Bill Dough Factory, LLC | Donut Tray x8 - 12/22/24 384 0 8566.63  384 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 00144167 Bill Lotte Market | Grocery for Sunday Lunch - 12/21/24 297.89 0 8864.52  297.89 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5340 0 0-5340-0 Grocery for Church Kitchen 175602 Bill Dough Factory, LLC | Donut Tray x10 - 12/29/24 480 0 9344.52  480 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5370 0 0-5370-0 Kitchen Supplies 454625 Bill Regency Coffee & Supply, Inc. | Filters 252ct 33.24 0 33.24  33.24 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241020-27 Bill Young M. Chung | 4th Kwonsa: Bread (x60) 105 0 105  105 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5380 0 0-5380-0 Meals and Snacks   Young M. Chung | 4th Kwonsa: Water 9.08 0 114.08  9.08 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241027-07 Bill Ju Hee Kim | CMA Youth Orchestra Snacks - 10/19/24 144.05 0 258.13  144.05 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241215-10 Bill Jessica Blanton | 2024 X-mas Homeless Gifts - Chips 114.15 0 372.28  114.15 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241222-10 Bill Jidon Choi | Grocery for Patient Serving 82.18 0 454.46  82.18 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks   Jidon Choi | Kwonsa Prayer Meeting Snacks 80 0 534.46  80 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241222-17 Bill Kangjun Lee | Reading Jesus End Ceremony: Hmart-Fruits 80.6 0 615.06  80.6 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks   Kangjun Lee | Reading Jesus End Ceremony: Hmart-snacks 91.84 0 706.9  91.84 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks   Kangjun Lee | Reading Jesus End Ceremony: Lotte-snacks 68.51 0 775.41  68.51 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks   Kangjun Lee | Reading Jesus End Ceremony: Napoleon Bakery 500 0 1275.41  500 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks   Kangjun Lee | Reading Jesus End Ceremony: Water 27.24 0 1302.65  27.24 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241222-46 Bill Joon P. Lee | CMA Final Concert: Water & Drink 44.4 0 1347.05  44.4 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241222-82 Bill Yun Jung Song | CMA Final Concert: Grocery 65.09 0 1412.14  65.09 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241229-13 Bill Junghwa K. Cho | CMA Sight-singing vocalization End-of-course Reception 374.75 0 1786.89  374.75 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241229-14 Bill Kye Sun Yim | CMA Voice & Praising End-of-course Reception 563.6 0 2350.49  563.6 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241229-19 Bill Yong Ki Kim | CMA End-of-course Concert Snacks 68.54 0 2419.03  68.54 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5380 0 0-5380-0 Meals and Snacks 241229-54 Bill Soo Kyung Choi | CMA Band Team End-of-course Reception Food 239.23 0 2658.26  239.23 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5400 0 0-5400-0 Mission Support 241027-67 Bill Byong K Cho | Kenya Medical STM: Fund Balance 3154 0 3154  3154 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5400 0 0-5400-0 Mission Support 241027-66 Bill Byong K Cho | Kenya Medical STM: Fund Balance 1000 0 4154  1000 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/01 Bill Mission to the World | Ind Mission Contribution for Missionary Rachel Koh - 10/2024 40 0 4194  40 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/02 Bill OMF International | Ind Mission Contribution for Missionary Mankyu Kim - 10/2024 100 0 4294  100 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/03 Bill San Jung Hyun Church | Ind Mission Contribution for Missionary Isaac Moon - 10/2024 310 0 4604  310 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/04 Bill PGM | Ind Mission Contribution for Missionary Chan Shin Park - 10/2024 500 0 5104  500 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/05 Bill Sorok Uni Foundation Inc | Ind Mission Contribution for Missionary Carleton Sea - 10/2024 40 0 5144  40 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/06 Bill PGM | Ind Mission Contribution for Missionary Young Chul Shin - 10/2024 90 0 5234  90 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/07 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Ohbyung Kwon - 10/2024 50 0 5284  50 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/08 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Hong Gie Kim - 10/2024 50 0 5334  50 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/09 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Hyun Il Kim- 10/2024 340 0 5674  340 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/10 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Young Sun Shin - 10/2024 30 0 5704  30 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/11 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Ike Sang Rhyu - 10/2024 80 0 5784  80 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/12 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Joseph J Yoon - 10/2024 450 0 6234  450 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/13 Bill SEED USA Ministry, Inc | Ind Mission Contribution for Missionary Sung Chul Lee - 10/2024 100 0 6334  100 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/14 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Hai Jin Lee - 10/2024 300 0 6634  300 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/15 Bill SEED USA Ministry | Ind Mission Contribution for Dream Project - 10/2024 110 0 6744  110 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/16 Bill PGM | Ind Mission Contribution for Missionary Jung Geun Ahn - 10/2024 780 0 7524  780 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/17 Bill One Challenge | Ind Mission Contribution for Missionary Dennis Park - 10/2024 290 0 7814  290 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/18 Bill GMP America | Ind Mission Contribution for Missionary Sungwoo Lee - 10/2024 300 0 8114  300 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 5400 0 0-5400-0 Mission Support 241031-01/19 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Sangwoo Cho - 10/2024 3700 0 11814  3700 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/01 Bill Mission to the World | Ind Mission Contribution for Missionary Rachel Koh - 11/2024 40 0 11854  40 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/02 Bill OMF International | Ind Mission Contribution for Missionary Mankyu Kim - 11/2024 125 0 11979  125 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/03 Bill San Jung Hyun Church | Ind Mission Contribution for Missionary Isaac Moon - 11/2024 130 0 12109  130 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/04 Bill PGM | Ind Mission Contribution for Missionary Chan Shin Park - 11/2024 100 0 12209  100 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/05 Bill Sorok Uni Foundation Inc | Ind Mission Contribution for Missionary Carleton Sea - 11/2024 1405 0 13614  1405 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/06 Bill PGM | Ind Mission Contribution for Missionary Young Chul Shin - 11/2024 150 0 13764  150 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/07 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Ohbyung Kwon - 11/2024 50 0 13814  50 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/09 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Ike Sang Rhyu - 11/2024 110 0 13924  110 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/10 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Joseph J Yoon - 11/2024 765 0 14689  765 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/11 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Hai Jin Lee - 11/2024 465 0 15154  465 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/12 Bill SEED USA Ministry | Ind Mission Contribution for Dream Project - 11/2024 70 0 15224  70 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/13 Bill PGM | Ind Mission Contribution for Missionary Jung Geun Ahn - 11/2024 540 0 15764  540 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/14 Bill One Challenge | Ind Mission Contribution for Missionary Dennis Park - 11/2024 215 0 15979  215 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/15 Bill GMP America | Ind Mission Contribution for Missionary Sungwoo Lee - 11/2024 300 0 16279  300 0}
+>>>  {2025 0 {0 63868521600 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/16 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Sangwoo Cho - 11/2024 1510 0 17789  1510 0}
+>>>  {2025 0 {0 63869040000 <nil>} 0 5400 0 0-5400-0 Mission Support 241130-01/08 Bill SEED USA Ministry | Ind Mission Contribution for Missionary Hyun Il Kim- 11/2024 795 0 18584  795 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5400 0 0-5400-0 Mission Support 241222-13 Bill The Barnabas Group Ltd | Support for Dae Dong Transportation Ministry ($450 x 3 months) - 10,11,12/2024 1350 0 19934  1350 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5410 0 0-5410-0 Outreach Program & Support 241020-05 Bill SETERAM Seminary | Support for Amazon SETERAM - 10/2024 2500 0 2500  2500 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5410 0 0-5410-0 Outreach Program & Support 241103-01 Bill SETERAM Seminary | Support for Amazon SETERAM Seminary - 11/2024 2500 0 5000  2500 0}
+>>>  {2025 0 {0 63869212800 <nil>} 0 5410 0 0-5410-0 Outreach Program & Support 241208-38 Bill SETERAM Seminary | Support for Amazon SETERAM Seminary - 12/2024 2500 0 7500  2500 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-41 Bill Sineun Kang | 2024 1st Fall Instructor's Fee: Kang Sineun - Cello 495 0 495  495 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-42 Bill Sung Wook Kwak | 2024 1st Fall Instructor's Fee: Kwak Sung Wook - Basic Guitar 660 0 1155  660 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-43 Bill Sangyun Kim | 2024 1st Fall Instructor's Fee: Sangyun Kim - Voice Class 1320 0 2475  1320 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-44 Bill Jaeyoung Kim | 2024 1st Fall Instructor's Fee: Jaeyoung Kim - Clarinet 825 0 3300  825 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-45 Bill Hee Kyung Choo | 2024 1st Fall Instructor's Fee: Hee Kyung Choo - Flute 825 0 4125  825 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-46 Bill Jooho Song | 2024 1st Fall Instructor's Fee: Jooho Song - Trumpet 660 0 4785  660 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-47 Bill Karen Seok | 2024 1st Fall Instructor's Fee: Kyungbin Lee - Violin 1485 0 6270  1485 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-48 Bill Young Joo Lee | 2024 1st Fall Instructor's Fee: Young Joo Lee - Voice Class 605 0 6875  605 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-49 Bill Gul Jang | 2024 1st Fall Instructor's Fee: Gul Jang - Clarinet, Saxophone 825 0 7700  825 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-50 Bill Seungwon Choi | 2024 1st Fall Instructor's Fee: Seung Won Choi - Voice Class 1155 0 8855  1155 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 241103-51 Bill Kyeonghui Woo | 2024 1st Fall Instructor's Fee: Kyeonghui Woo - Hymn Piano 1155 0 10010  1155 0}
+>>>  {2025 0 {0 63866188800 <nil>} 0 5420 0 0-5420-0 Outside Service 2241103-52 Bill Sela Yang | 2024 1st Fall Instructor's Fee: Sela Yang - Basic Guitar 250 0 10260  250 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5420 0 0-5420-0 Outside Service 241117-43 Bill Junghwa Ko Cho | 2024 1st Fall Instructor's Fee: Junghwa Ko - Voice Class 700 0 10960  700 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5420 0 0-5420-0 Outside Service 23005847.00-8 Bill IMEG Consultants Corp. | 9/23 Changes per Fire Marshal meeting, Geotechnical rock depth analysis at storm vaults 900 0 11860  900 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5420 0 0-5420-0 Outside Service   IMEG Consultants Corp. | 9/27 & 10/4 Client meetings, 9/23 Fire Marshal meeting 570 0 12430  570 0}
+>>>  {2025 0 {0 63867398400 <nil>} 0 5420 0 0-5420-0 Outside Service  JournalEntry  | Transfer to GL#3580 Agape STM: Childcare for Soonjang Retreat 300 0 12730  300 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-31 Bill Sineun Kang | 2024 2nd Fall Instructor's Fee: Kang Sineun - Cello 495 0 13225  495 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-32 Bill Junghwa Ko Cho | 2024 2nd Fall Instructor's Fee: Junghwa Ko - Voice Class 580 0 13805  580 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-33 Bill Sung Wook Kwak | 2024 2nd Fall Instructor's Fee: Kwak Sung Wook - Basic Guitar 660 0 14465  660 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-34 Bill Sangyun Kim | 2024 2nd Fall Instructor's Fee: Sangyun Kim - Voice Class 990 0 15455  990 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-35 Bill Su A Kim | 2024 2nd Fall Instructor's Fee: Su A Kim - Keyboard 330 0 15785  330 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-36 Bill Jaeyoung Kim | 2024 2nd Fall Instructor's Fee: Jaeyoung Kim - Clarinet 825 0 16610  825 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-37 Bill Hee Kyung Choo | 2024 2nd Fall Instructor's Fee: Hee Kyung Choo - Flute 825 0 17435  825 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-38 Bill Jooho Song | 2024 2nd Fall Instructor's Fee: Jooho Song - Trumpet 687.5 0 18122.5  687.5 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-39 Bill Sela Yang | 2024 2nd Fall Instructor's Fee: Sela Yang - Basic Guitar 230 0 18352.5  230 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-40 Bill Kyeonghui Woo | 2024 2nd Fall Instructor's Fee: Kyeonghui Woo - Hymn Piano 1430 0 19782.5  1430 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-41 Bill Karen Seok | 2024 2nd Fall Instructor's Fee: Kyungbin Lee - Violin 1485 0 21267.5  1485 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-42 Bill Soo Kyung Choi | 2024 2nd Fall Instructor's Fee: Soo Kyung Choi - Kyeboard 165 0 21432.5  165 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-43 Bill Young Joo Lee | 2024 2nd Fall Instructor's Fee: Young Joo Lee - Voice Class 495 0 21927.5  495 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-44 Bill Gul Jang | 2024 2nd Fall Instructor's Fee: Gul Jang - Clarinet, Saxophone 825 0 22752.5  825 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5420 0 0-5420-0 Outside Service 241222-45 Bill Seungwon Choi | 2024 2nd Fall Instructor's Fee: Seung Won Choi - Voice Class 1155 0 23907.5  1155 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5450 0 0-5450-0 Transportation & Lodging 241027-56 Bill Byung Sik Kang | STM-Kenya Medical: Airfare (x5) 3859.6 0 3859.6  3859.6 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5450 0 0-5450-0 Transportation & Lodging 241027-57 Bill Byong K Cho | STM-Kenya Medical: Airfare (x3) 7398 0 11257.6  7398 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5450 0 0-5450-0 Transportation & Lodging   Byong K Cho | STM-Kenya Medical: Airfare (x4) 3587.6 0 14845.2  3587.6 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5550 0 0-5550-0 Office Supplies 241027-21 Bill Mihee Yoo | Name Labels 8.47 0 8.47  8.47 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5570 0 0-5570-0 Supplies 69692 Bill Four Star Printing | CMA Binder Cover (x100) 44.19 0 44.19  44.19 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5570 0 0-5570-0 Supplies 241020-27 Bill Young M. Chung | 4th Kwonsa: Name Label 9.53 0 53.72  9.53 0}
+>>>  {2025 0 {0 63864979200 <nil>} 0 5570 0 0-5570-0 Supplies   Young M. Chung | 4th Kwonsa: Rubber Glove 22.19 0 75.91  22.19 0}
+>>>  {2025 0 {0 63867657600 <nil>} 0 5570 0 0-5570-0 Supplies  Check VISA | Reading Jesus Stickers 200 for Book #5 88 0 163.91  88 0}
+>>>  {2025 0 {0 63867657600 <nil>} 0 5570 0 0-5570-0 Supplies   VISA | Reading Jesus Stickers 200 for Book #6 88 0 251.91  88 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5570 0 0-5570-0 Supplies 154121 Bill Twin Towers Florist | Altar Flower Arrangement - 11/8/2024 150 0 401.91  150 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5570 0 0-5570-0 Supplies 154292 Bill Twin Towers Florist | Altar Flower Arrangement - 11/10/2024 250 0 651.91  250 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5570 0 0-5570-0 Supplies 154476 Bill Twin Towers Florist | Altar Flower Arrangement - 11/17/2024 250 0 901.91  250 0}
+>>>  {2025 0 {0 63869817600 <nil>} 0 5570 0 0-5570-0 Supplies 154725 Bill Twin Towers Florist | Altar Flower Arrangement - 11/24/2024 250 0 1151.91  250 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5570 0 0-5570-0 Supplies 241222-17 Bill Kangjun Lee | Reading Jesus End Ceremony: Bulk Gift Bags 131.24 0 1283.15  131.24 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5570 0 0-5570-0 Supplies 241222-47 Bill Sang Heun Cho | CMA Final Concert: Deco supplies 6.63 0 1289.78  6.63 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5570 0 0-5570-0 Supplies 241222-82 Bill Yun Jung Song | CMA Final Concert: Napkin, Cup 29.13 0 1318.91  29.13 0}
+>>>  {2025 0 {0 63870422400 <nil>} 0 5570 0 0-5570-0 Supplies   Yun Jung Song | CMA Final Concert: Plate 18.01 0 1336.92  18.01 0}
+>>>  {2025 0 {0 63871027200 <nil>} 0 5570 0 0-5570-0 Supplies 139616 Bill Washington Christian Book Center | Diary *40 358 0 1694.92  358 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 5580 0 0-5580-0 Taxes and Licenses 241027-02 Bill Honda of Chantilly | Honda CR-V EX Sales Tax 1399.36 0 1399.36  1399.36 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 5720 0 0-5720-0 Equip., Software & Furniture 24664 Bill INA Display | AV Equipment Upgrade: Panasonic Camera, Switcher/Recorder/Playback, Power Outlet, Monitor, Control Management, Network Switcher, Cable, Hardware 325962.95 0 325962.95  325962.95 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 5720 0 0-5720-0 Equip., Software & Furniture 24784 Bill INA Display | Audio Cable Removal and Management: Main Sanctuary, MPR, Grace Chapel, CCPC Chapel 28919 0 354881.95  28919 0}
+>>>  {2025 0 {0 63864374400 <nil>} 0 5720 0 0-5720-0 Equip., Software & Furniture 24785 Bill INA Display | Video Cable Removal and Management: Main Sanctuary, MPR, Grace Chapel, CCPC Chapel 29255.2 0 384137.15  29255.2 0}
+>>>  {2025 0 {0 63865584000 <nil>} 0 6010 0 0-6010-0 Miscellaneous 10/28/24 Bill Burke & Herbert Bank | Piano Key Appraisal & Renew Fee, Environment Survey 6525 0 6525  6525 0}
+>>>  {2025 0 {0 63865929600 <nil>} 0 6020 0 0-6020-0 Fees Collected  JournalEntry  | Chargeback: CMA Tuition -Youth Eva Min(Hye Jin Ji - Refer To Maker) 100 0 100  100 0}
+>>>  {2025 0 {0 63866793600 <nil>} 0 6020 0 0-6020-0 Fees Collected  JournalEntry  | Kwonsa4 Fee 0 4360 -4260  -4360 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 6020 0 0-6020-0 Fees Collected 241201-71 Bill Hyun Ju Kim | CMA Tuition Refund: 	Phillip Yejun Kim 100 0 -4160  100 0}
+>>>  {2025 0 {0 63868608000 <nil>} 0 6020 0 0-6020-0 Fees Collected 241201-81 Bill Ae Kyung Chong | CMA Tuition Refund: Ae Kyung Chong 127 0 -4033  127 0}
