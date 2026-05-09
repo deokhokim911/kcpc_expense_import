@@ -5,13 +5,15 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"net/url"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/xuri/excelize/v2"
 	_ "github.com/lib/pq"
+	"github.com/xuri/excelize/v2"
 )
 
 var targetCodes = []int{4870, 4880, 5001, 5002}
@@ -40,10 +42,30 @@ const ledgerRowMinCols = 16
 // 사용 가능한 환경변수:
 // - DATABASE_URL: postgres://USER:PASSWORD@HOST:PORT/DB?sslmode=disable
 // - 또는 PGHOST, PGPORT, PGUSER, PGPASSWORD, PGDATABASE 조합
+// Prisma 등이 붙이는 ?schema=public 은 libpq 가 서버로 넘겨 "unrecognized configuration parameter schema" 로
+// 실패하므로 URL 에서 제거한다 (본 코드는 SQL 에 public. 을 명시적으로 씀).
+
+func sanitizePostgresDatabaseURL(raw string) string {
+	raw = strings.TrimSpace(raw)
+	if raw == "" {
+		return raw
+	}
+	u, err := url.Parse(raw)
+	if err != nil {
+		return raw
+	}
+	if u.Scheme != "postgres" && u.Scheme != "postgresql" {
+		return raw
+	}
+	q := u.Query()
+	q.Del("schema")
+	u.RawQuery = q.Encode()
+	return u.String()
+}
 
 func buildPostgresConnStringFromEnv() (string, error) {
-	if url := strings.TrimSpace(os.Getenv("DATABASE_URL")); url != "" {
-		return url, nil
+	if conn := strings.TrimSpace(os.Getenv("DATABASE_URL")); conn != "" {
+		return sanitizePostgresDatabaseURL(conn), nil
 	}
 
 	host := strings.TrimSpace(os.Getenv("PGHOST"))
@@ -231,8 +253,8 @@ func getAfterCharacter(s, sep string) string {
 }
 
 func removeQuote(s string) string {
-		returnStr := strings.ReplaceAll(s, `"`, "")
-		return strings.ReplaceAll(strings.ReplaceAll(returnStr, ",", ""), " ", "")
+	returnStr := strings.ReplaceAll(s, `"`, "")
+	return strings.ReplaceAll(strings.ReplaceAll(returnStr, ",", ""), " ", "")
 }
 
 func padRow(rec []string, minCols int) []string {
@@ -288,7 +310,7 @@ func handleMinistryBalance(db *sql.DB, rows [][]string, quiet bool) int {
 				account_cd = 0
 				previous_balance = Budget_Balance{}
 				continue
-			} 
+			}
 
 			noAccountId, err := strconv.Atoi(accountId)
 			if err != nil {
@@ -297,8 +319,8 @@ func handleMinistryBalance(db *sql.DB, rows [][]string, quiet bool) int {
 			} else {
 				account_cd = noAccountId
 			}
-		} 
-		
+		}
+
 		if account_cd > 0 {
 
 			if len(rec[13]) < 1 {
@@ -308,20 +330,20 @@ func handleMinistryBalance(db *sql.DB, rows [][]string, quiet bool) int {
 			balance_budget.create_dt = previous_balance.create_dt
 
 			balance_budget.budget_cd = account_cd
-			balance_budget.segment2 = account_cd	
+			balance_budget.segment2 = account_cd
 			balance_budget.accountdesc = accountName
 
 			if len(rec[9]) > 3 {
 				ministryId, _ := strconv.Atoi(strings.Trim(strings.Split(rec[9], " - ")[0], " "))
-				// ministryName := strings.Trim(getAfterCharacter(rec[9], " - "), " ")	
-				// fmt.Printf("****** ministryId = %v, ministryName = %v\n", ministryId, ministryName)		
+				// ministryName := strings.Trim(getAfterCharacter(rec[9], " - "), " ")
+				// fmt.Printf("****** ministryId = %v, ministryName = %v\n", ministryId, ministryName)
 				balance_budget.segment3 = ministryId
 			}
 
 			if len(rec[10]) > 3 {
 				deptId, _ := strconv.Atoi(strings.Trim(strings.Split(rec[10], " - ")[0], " "))
-				// deptName := strings.Trim(getAfterCharacter(rec[10], " - "), " ")	
-				// fmt.Printf("****** deptId = %v, deptName = %v\n", deptId, deptName)			
+				// deptName := strings.Trim(getAfterCharacter(rec[10], " - "), " ")
+				// fmt.Printf("****** deptId = %v, deptName = %v\n", deptId, deptName)
 
 				balance_budget.budget_cd = deptId
 				balance_budget.segment1 = deptId
@@ -496,7 +518,9 @@ func main() {
 			printUsage()
 			os.Exit(2)
 		}
-		runDryRun(*ministryLedgerXlsx, *quiet)
+		if err := runMinistryOrgBalanceDryRunPreview(*ministryLedgerXlsx, *quiet); err != nil {
+			log.Fatal(err)
+		}
 		return
 	}
 
@@ -543,11 +567,35 @@ func main() {
 	handleMinistryBalance(db, ministryRows, *quiet)
 }
 
-func runDryRun(ministryLedgerPath string, quiet bool) {
+func runMinistryOrgBalanceDryRunPreview(ministryLedgerPath string, quiet bool) error {
+	psqlInfo, err := buildPostgresConnStringFromEnv()
+	if err != nil {
+		return err
+	}
+	db, err := sql.Open("postgres", psqlInfo)
+	if err != nil {
+		return fmt.Errorf("open db: %w", err)
+	}
+	defer db.Close()
+	if err := db.Ping(); err != nil {
+		return fmt.Errorf("ping db: %w", err)
+	}
+
+	var deleteCnt int
+	err = db.QueryRow(`SELECT COUNT(*) FROM public.org_balance WHERE fiscalyear = $1`, fiscalYear).Scan(&deleteCnt)
+	if err != nil {
+		return fmt.Errorf("count org_balance: %w", err)
+	}
+
 	ministryRows, err := loadWorksheetRows(ministryLedgerPath)
 	if err != nil {
-		log.Fatalf("ministry ledger: %v", err)
+		return fmt.Errorf("ministry ledger: %w", err)
 	}
-	nMin := handleMinistryBalance(nil, ministryRows, quiet)
-	fmt.Printf("[dry-run] ministry ledger rows processed: %d\n", nMin)
+	nInsert := handleMinistryBalance(nil, ministryRows, quiet)
+
+	fmt.Printf("[dry-run] file_ministry_ledger=%s\n", filepath.Base(ministryLedgerPath))
+	fmt.Printf("[dry-run] org_balance planned_delete fiscalyear=%d count=%d\n", fiscalYear, deleteCnt)
+	fmt.Printf("[dry-run] org_balance planned_insert count=%d\n", nInsert)
+	fmt.Printf("[dry-run] ministry ledger rows processed: %d\n", nInsert)
+	return nil
 }

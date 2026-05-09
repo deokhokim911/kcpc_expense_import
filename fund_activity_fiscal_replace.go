@@ -132,11 +132,16 @@ func runFundActivityFiscalYearReplace(db *sql.DB, fiscalYear int, summaryPath, d
 			}
 			fmt.Printf("[dry-run] fiscal_year=%d existing DB: import_run=%d summary_rows=%d detail_lines=%d (would DELETE via CASCADE)\n",
 				fiscalYear, runs, sCt, dCt)
+			fmt.Printf("[dry-run] fund_activity planned_delete fiscalyear=%d import_run=%d summary_row=%d detail_line=%d\n",
+				fiscalYear, runs, sCt, dCt)
 		} else {
 			fmt.Printf("[dry-run] fiscal_year=%d (no DB: cannot count existing rows)\n", fiscalYear)
 		}
+		fmt.Printf("[dry-run] file_fund_summary=%s\n", summaryBase)
+		fmt.Printf("[dry-run] file_fund_detail_ledger=%s\n", detailBase)
 		fmt.Printf("[dry-run] period=%s to %s\n", periodStart.Format(time.DateOnly), periodEnd.Format(time.DateOnly))
 		fmt.Printf("[dry-run] summary=%s ledger=%s\n", summaryBase, detailBase)
+		fmt.Printf("[dry-run] fund_activity planned_insert import_run=1 summary_row=%d detail_line=%d\n", len(recs), len(detailLines))
 		fmt.Printf("[dry-run] would insert 1 import_run + %d summary_row(s) + %d detail_line(s)\n", len(recs), len(detailLines))
 		return nil
 	}

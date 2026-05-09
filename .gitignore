@@ -6,3 +6,7 @@
 scripts/run_all_imports.env
 
 *.log
+
+# local working artifacts / imports
+current/
+*.xlsx
