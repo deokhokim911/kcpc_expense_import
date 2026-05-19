@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"time"
 	"unicode/utf8"
@@ -15,6 +16,9 @@ import (
 const (
 	generalLedgerSheetName = "General Ledger"
 	glMinCols              = 16
+
+	incomeExpenseKindIncome  = "Income"
+	incomeExpenseKindExpense = "Expense"
 )
 
 func truncateRunes(s string, maxRunes int) string {
@@ -75,50 +79,120 @@ func parseOptionalString(s string) sql.NullString {
 	return sql.NullString{String: s, Valid: true}
 }
 
-// detailLine represents one row to insert (fund_name always non-empty).
+func isGLCellEmpty(s string) bool {
+	return strings.TrimSpace(s) == ""
+}
+
+// isNumberText reports whether s is "Number - Text" (first '-' splits account code from label).
+func isNumberText(s string) bool {
+	_, ok := parseNumberText(s)
+	return ok
+}
+
+func parseNumberText(s string) (code string, ok bool) {
+	s = strings.TrimSpace(s)
+	idx := strings.Index(s, "-")
+	if idx < 0 {
+		return "", false
+	}
+	code = strings.TrimSpace(s[:idx])
+	if code == "" {
+		return "", false
+	}
+	if _, err := strconv.Atoi(code); err != nil {
+		return "", false
+	}
+	return code, true
+}
+
+// classifyAccountCode maps QB account number to Income/Expense kind, or "" if no rule matches.
+func classifyAccountCode(code string) string {
+	code = strings.TrimSpace(code)
+	if strings.HasPrefix(code, "1865") {
+		return incomeExpenseKindExpense
+	}
+	n, err := strconv.Atoi(code)
+	if err != nil {
+		return ""
+	}
+	if n >= 4300 && n <= 4510 {
+		return incomeExpenseKindIncome
+	}
+	if n >= 5180 && n <= 9010 {
+		return incomeExpenseKindExpense
+	}
+	return ""
+}
+
+// detailLine represents one row to insert (fund_name and income_expense_kind always set).
 type detailLine struct {
-	fundName           string
-	lineDate           sql.NullTime
-	transactionNumber  sql.NullString
-	transactionType    sql.NullString
-	contact            sql.NullString
-	memo               sql.NullString
-	referenceNumber    sql.NullString
-	note               sql.NullString
-	debit              sql.NullFloat64
-	credit             sql.NullFloat64
-	amount             sql.NullFloat64
-	balance            sql.NullFloat64
-	accountSection     sql.NullString
-	rowLabel           sql.NullString
-	sourceRowOrder     int
+	fundName          string
+	incomeExpenseKind string
+	accountCode       sql.NullString
+	lineDate          sql.NullTime
+	transactionNumber sql.NullString
+	transactionType   sql.NullString
+	contact           sql.NullString
+	memo              sql.NullString
+	referenceNumber   sql.NullString
+	note              sql.NullString
+	debit             sql.NullFloat64
+	credit            sql.NullFloat64
+	amount            sql.NullFloat64
+	balance           sql.NullFloat64
+	accountSection    sql.NullString
+	rowLabel          sql.NullString
+	sourceRowOrder    int
 }
 
 func parseGeneralLedgerDetailLines(rows [][]string, headerIdx int) ([]detailLine, error) {
-	var accountSection string
-	var out []detailLine
-	order := 0
+	var (
+		activeKind     string
+		accountSection string
+		accountCode    string
+		out            []detailLine
+		order          int
+	)
 
 	for _, raw := range rows[headerIdx+1:] {
 		rec := padRow(raw, glMinCols)
 		order++
 
 		name := strings.TrimSpace(rec[0])
-		dateStr := strings.TrimSpace(rec[1])
 		fund := strings.TrimSpace(rec[8])
+		debitCell := rec[12]
+		creditCell := rec[13]
 
-		if strings.HasPrefix(strings.TrimSpace(name), "Total for") {
+		if strings.HasPrefix(name, "Total for") {
 			continue
 		}
 
-		if fund == "" {
-			if name != "" && dateStr == "" && !strings.EqualFold(name, "Beginning Balance") {
+		// Rule 1–4: account section header (Name only; Fund/Debit/Credit empty).
+		if name != "" && isGLCellEmpty(fund) && isGLCellEmpty(debitCell) && isGLCellEmpty(creditCell) {
+			if !isNumberText(name) {
+				continue
+			}
+			code, ok := parseNumberText(name)
+			if !ok {
+				continue
+			}
+			if kind := classifyAccountCode(code); kind != "" {
+				activeKind = kind
 				accountSection = name
+				accountCode = code
 			}
 			continue
 		}
 
+		if fund == "" {
+			continue
+		}
+
 		if strings.EqualFold(name, "Beginning Balance") {
+			continue
+		}
+
+		if activeKind == "" {
 			continue
 		}
 
@@ -129,6 +203,7 @@ func parseGeneralLedgerDetailLines(rows [][]string, headerIdx int) ([]detailLine
 
 		d := detailLine{
 			fundName:          fund,
+			incomeExpenseKind: activeKind,
 			lineDate:          lineDate,
 			transactionNumber: parseOptionalString(rec[2]),
 			transactionType:   parseOptionalString(rec[3]),
@@ -141,6 +216,9 @@ func parseGeneralLedgerDetailLines(rows [][]string, headerIdx int) ([]detailLine
 
 		if accountSection != "" {
 			d.accountSection = sql.NullString{String: accountSection, Valid: true}
+		}
+		if accountCode != "" {
+			d.accountCode = sql.NullString{String: accountCode, Valid: true}
 		}
 		if name != "" {
 			d.rowLabel = sql.NullString{String: name, Valid: true}
@@ -168,6 +246,18 @@ func parseGeneralLedgerDetailLines(rows [][]string, headerIdx int) ([]detailLine
 	}
 
 	return out, nil
+}
+
+func countDetailLinesByKind(lines []detailLine) (income, expense int) {
+	for _, ln := range lines {
+		switch ln.incomeExpenseKind {
+		case incomeExpenseKindIncome:
+			income++
+		case incomeExpenseKindExpense:
+			expense++
+		}
+	}
+	return income, expense
 }
 
 func lookupRunIDByPeriod(db *sql.DB, start, end time.Time) (int, error) {
@@ -235,8 +325,9 @@ func runFundActivityDetailImport(db *sql.DB, ledgerPath string, runID int, match
 	base := filepath.Base(ledgerPath)
 
 	if dryRun {
+		incomeN, expenseN := countDetailLinesByKind(lines)
 		fmt.Printf("[dry-run] detail file=%s period=%s to %s\n", base, periodStart.Format(time.DateOnly), periodEnd.Format(time.DateOnly))
-		fmt.Printf("[dry-run] run_id=%d parsed detail lines=%d (no DB writes)\n", resolvedRunID, len(lines))
+		fmt.Printf("[dry-run] run_id=%d parsed detail lines=%d (income=%d expense=%d, no DB writes)\n", resolvedRunID, len(lines), incomeN, expenseN)
 		return nil
 	}
 
@@ -256,17 +347,20 @@ func runFundActivityDetailImport(db *sql.DB, ledgerPath string, runID int, match
 	log.Printf("fund activity detail: inserting %d rows ...", totalLines)
 
 	const qIns = `INSERT INTO public.fund_activity_detail_line (
-		run_id, fund_name, line_date, transaction_number, transaction_type,
+		run_id, fund_name, income_expense_kind, account_code,
+		line_date, transaction_number, transaction_type,
 		contact, memo, reference_number, note,
 		debit, credit, amount, balance,
 		account_section, row_label, source_row_order
-	) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)`
+	) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18)`
 
 	const progressEvery = 50
 	for i, ln := range lines {
 		_, err := tx.Exec(qIns,
 			resolvedRunID,
 			ln.fundName,
+			ln.incomeExpenseKind,
+			ln.accountCode,
 			ln.lineDate,
 			ln.transactionNumber,
 			ln.transactionType,

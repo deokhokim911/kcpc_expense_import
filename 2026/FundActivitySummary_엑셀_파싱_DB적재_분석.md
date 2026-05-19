@@ -141,7 +141,7 @@ G/L **거래 라인 전체**는 이 테이블에 들어가지 않는다.
 - Summary는 **`Fund Activity Summary` 시트**, Detail은 **`General Ledger` 시트** — 실측 파일과 일치
 - Import 단위는 **`import_run`(현재 테이블명 `fund_activity_import_run`)** 에 Summary·Detail을 묶음
 - Summary 행과 Detail 행은 **`run_id` + `fund_name`(Fund 열, 문자열 트림)** 으로 연결
-- Income / Expenses 드릴다운은 Detail에서 Credit·Debit 규칙 적용 — **Detail 적재 테이블이 선행**되어야 함 (문서 Phase 2)
+- Income / Expenses 드릴다운은 Detail의 `income_expense_kind` 로 필터 — **Detail 적재·마이그레이션** 선행 (§ [`FundActivityDetail_TransactionType_파싱_개발방안.md`](FundActivityDetail_TransactionType_파싱_개발방안.md))
 
 현재 `migration.sql`에는 Summary까지만 있으므로, **G/L 라인 적재는 다음 마이그레이션·파서 단계**로 분리하는 것이 설계와 일치한다.
 

@@ -141,7 +141,9 @@ func runFundActivityFiscalYearReplace(db *sql.DB, fiscalYear int, summaryPath, d
 		fmt.Printf("[dry-run] file_fund_detail_ledger=%s\n", detailBase)
 		fmt.Printf("[dry-run] period=%s to %s\n", periodStart.Format(time.DateOnly), periodEnd.Format(time.DateOnly))
 		fmt.Printf("[dry-run] summary=%s ledger=%s\n", summaryBase, detailBase)
-		fmt.Printf("[dry-run] fund_activity planned_insert import_run=1 summary_row=%d detail_line=%d\n", len(recs), len(detailLines))
+		incomeN, expenseN := countDetailLinesByKind(detailLines)
+		fmt.Printf("[dry-run] fund_activity planned_insert import_run=1 summary_row=%d detail_line=%d (income=%d expense=%d)\n",
+			len(recs), len(detailLines), incomeN, expenseN)
 		fmt.Printf("[dry-run] would insert 1 import_run + %d summary_row(s) + %d detail_line(s)\n", len(recs), len(detailLines))
 		return nil
 	}
@@ -213,11 +215,12 @@ func runFundActivityFiscalYearReplace(db *sql.DB, fiscalYear int, summaryPath, d
 	}
 
 	const qDet = `INSERT INTO public.fund_activity_detail_line (
-		run_id, fund_name, line_date, transaction_number, transaction_type,
+		run_id, fund_name, income_expense_kind, account_code,
+		line_date, transaction_number, transaction_type,
 		contact, memo, reference_number, note,
 		debit, credit, amount, balance,
 		account_section, row_label, source_row_order
-	) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)`
+	) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18)`
 
 	totalLines := len(detailLines)
 	const progressEvery = 50
@@ -225,6 +228,8 @@ func runFundActivityFiscalYearReplace(db *sql.DB, fiscalYear int, summaryPath, d
 		_, err := tx.Exec(qDet,
 			runID,
 			ln.fundName,
+			ln.incomeExpenseKind,
+			ln.accountCode,
 			ln.lineDate,
 			ln.transactionNumber,
 			ln.transactionType,
