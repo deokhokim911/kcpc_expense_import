@@ -12,6 +12,8 @@ func TestIsNumberText(t *testing.T) {
 	}{
 		{"5180 - Payroll", true},
 		{"4300 - Contributions", true},
+		{"1865.1 - Contractors", true},
+		{"1865.5 - Administrative Expenses", true},
 		{" 5180 - X ", true},
 		{"Random Header", false},
 		{"5180", false},
@@ -40,6 +42,8 @@ func TestClassifyAccountCode(t *testing.T) {
 		want string
 	}{
 		{"1865", incomeExpenseKindExpense},
+		{"1865.1", incomeExpenseKindExpense},
+		{"1865.5", incomeExpenseKindExpense},
 		{"18650", incomeExpenseKindExpense},
 		{"5180", incomeExpenseKindExpense},
 		{"9010", incomeExpenseKindExpense},
@@ -90,6 +94,29 @@ func TestParseGeneralLedgerDetailLines_StickyKind(t *testing.T) {
 	}
 	if lines[2].fundName != "Fund C" || lines[2].incomeExpenseKind != incomeExpenseKindExpense {
 		t.Fatalf("line2: fund=%q kind=%q (sticky after non-Number-Text header)", lines[2].fundName, lines[2].incomeExpenseKind)
+	}
+}
+
+func TestParseGeneralLedgerDetailLines_1865Subaccount(t *testing.T) {
+	t.Parallel()
+	header := []string{"Name", "Date", "", "Type", "", "", "", "", "Fund", "", "", "", "Debit", "Credit", "Amount", "Balance"}
+	rows := [][]string{
+		header,
+		{"1865.1 - Contractors", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""},
+		{"", "01/15/2026", "", "Bill", "", "", "", "", "TR-Vision 123 Contributions", "", "", "", "100", "0", "100", ""},
+	}
+	lines, err := parseGeneralLedgerDetailLines(rows, 0)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(lines) != 1 {
+		t.Fatalf("got %d lines, want 1", len(lines))
+	}
+	if lines[0].incomeExpenseKind != incomeExpenseKindExpense {
+		t.Fatalf("kind=%q", lines[0].incomeExpenseKind)
+	}
+	if lines[0].accountCode.String != "1865.1" {
+		t.Fatalf("account_code=%q", lines[0].accountCode.String)
 	}
 }
 

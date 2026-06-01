@@ -124,7 +124,7 @@ FOR each row after header:
 
 ### 헬퍼
 
-- `isNumberText(s)` — trim, `-` 존재, `-` 앞이 정수 파싱 가능
+- `isNumberText(s)` — trim, `-` 존재, `-` 앞이 계정 번호 (`5180`, `1865.1` 등 — **소수점 하위 계정 포함**)
 - `parseNumberText(s)` — `(code, true)` / `("", false)`
 - `classifyAccountCode(code)` — `Income` | `Expense` | `""`
 

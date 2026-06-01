@@ -13,8 +13,14 @@
 
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$ROOT"
+
+# shellcheck source=lib/load_run_all_imports_env.sh
+source "$SCRIPT_DIR/lib/load_run_all_imports_env.sh"
+kcpc_resolve_import_env_paths
+kcpc_check_import_db_env
 
 SUMMARY_XLSX="${FUND_SUMMARY_XLSX:-$ROOT/2026/FundActivitySummary.20260503.xlsx}"
 DETAIL_XLSX="${FUND_DETAIL_XLSX:-$ROOT/2026/GeneralLedger.20260501.Special_web_posting.xlsx}"

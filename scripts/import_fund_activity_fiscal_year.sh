@@ -10,11 +10,18 @@
 #   FISCAL_YEAR              회계연도 (기본 2026)
 #   FUND_SUMMARY_XLSX        Fund Activity Summary 파일
 #   FUND_DETAIL_LEDGER_XLSX  General Ledger Special web posting 파일
+#   DATABASE_URL / PG*       scripts/run_all_imports.env 에서 자동 로드 (run_all_imports.sh 와 동일)
 
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$ROOT"
+
+# shellcheck source=lib/load_run_all_imports_env.sh
+source "$SCRIPT_DIR/lib/load_run_all_imports_env.sh"
+kcpc_resolve_import_env_paths
+kcpc_check_import_db_env
 
 FY="${FISCAL_YEAR:-2026}"
 SUMMARY="${FUND_SUMMARY_XLSX:-$ROOT/2026/FundActivitySummary.20260503.xlsx}"

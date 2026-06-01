@@ -64,17 +64,8 @@ _RUN_ALL_DEFAULT_FUND_SUMMARY="${_RUN_ALL_DEFAULT_FUND_SUMMARY:-}"
 _RUN_ALL_DEFAULT_FUND_DETAIL_LEDGER="${_RUN_ALL_DEFAULT_FUND_DETAIL_LEDGER:-}"
 _RUN_ALL_DEFAULT_MINISTRY_QUIET="${_RUN_ALL_DEFAULT_MINISTRY_QUIET:-0}"
 
-_ENV_FILE="${RUN_ALL_IMPORTS_ENV:-$SCRIPT_DIR/run_all_imports.env}"
-if [[ -f "$_ENV_FILE" ]]; then
-  echo "run_all_imports: loading $_ENV_FILE" >&2
-  _ENV_CLEAN="$(mktemp)"
-  tr -d '\r' < "$_ENV_FILE" > "$_ENV_CLEAN"
-  set -a
-  # shellcheck disable=SC1090
-  source "$_ENV_CLEAN"
-  set +a
-  rm -f "$_ENV_CLEAN"
-fi
+# shellcheck source=lib/load_run_all_imports_env.sh
+source "$SCRIPT_DIR/lib/load_run_all_imports_env.sh"
 
 if [[ "$_RUN_ALL_OVERRIDE_FY" == true ]]; then export FISCAL_YEAR="$_RUN_ALL_PRE_FY"; fi
 if [[ "$_RUN_ALL_OVERRIDE_MIN" == true ]]; then export MINISTRY_LEDGER_XLSX="$_RUN_ALL_PRE_MIN"; fi
@@ -87,6 +78,8 @@ export MINISTRY_LEDGER_XLSX="${MINISTRY_LEDGER_XLSX:-$_RUN_ALL_DEFAULT_MINISTRY_
 export FUND_SUMMARY_XLSX="${FUND_SUMMARY_XLSX:-$_RUN_ALL_DEFAULT_FUND_SUMMARY}"
 export FUND_DETAIL_LEDGER_XLSX="${FUND_DETAIL_LEDGER_XLSX:-$_RUN_ALL_DEFAULT_FUND_DETAIL_LEDGER}"
 export MINISTRY_IMPORT_QUIET="${MINISTRY_IMPORT_QUIET:-$_RUN_ALL_DEFAULT_MINISTRY_QUIET}"
+
+kcpc_resolve_import_env_paths
 
 # Go(main) DB 연결 — 미리보기·적재 모두 필요
 if [[ -z "${DATABASE_URL:-}" ]]; then

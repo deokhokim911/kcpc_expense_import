@@ -89,6 +89,33 @@ func isNumberText(s string) bool {
 	return ok
 }
 
+// isAccountNumber reports whether s is a QB-style account number (e.g. 5180, 1865.1, 1865.5).
+func isAccountNumber(s string) bool {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return false
+	}
+	if s[0] < '0' || s[0] > '9' {
+		return false
+	}
+	dotSeen := false
+	for i := 0; i < len(s); i++ {
+		c := s[i]
+		switch {
+		case c >= '0' && c <= '9':
+			continue
+		case c == '.':
+			if dotSeen {
+				return false
+			}
+			dotSeen = true
+		default:
+			return false
+		}
+	}
+	return true
+}
+
 func parseNumberText(s string) (code string, ok bool) {
 	s = strings.TrimSpace(s)
 	idx := strings.Index(s, "-")
@@ -96,10 +123,7 @@ func parseNumberText(s string) (code string, ok bool) {
 		return "", false
 	}
 	code = strings.TrimSpace(s[:idx])
-	if code == "" {
-		return "", false
-	}
-	if _, err := strconv.Atoi(code); err != nil {
+	if !isAccountNumber(code) {
 		return "", false
 	}
 	return code, true
