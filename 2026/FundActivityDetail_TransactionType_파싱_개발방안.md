@@ -35,7 +35,7 @@
 |---|------|------|
 | 1 | A에 값, Fund·Debit·Credit **모두 비어 있음**, `Number - Text` **아님** | 행 **완전 스킵** (`account_section` 미갱신) |
 | 2 | `Number - Text` | trim 후 **첫 `-` 앞**을 Number로 추출 (예: `5180 - Payroll` → `5180`) |
-| 3 | Number가 `1865`로 시작 **또는** 5180 ≤ Number ≤ 9010 | **Expense** 컨텍스트 설정 |
+| 3 | Number가 `1865`로 시작 **또는** 5120 ≤ Number ≤ 9010 | **Expense** 컨텍스트 설정 |
 | 4 | 4300 ≤ Number ≤ 4510 | **Income** 컨텍스트 설정 |
 | 5 | 유효한 Income/Expense 설정 후 | **다음 `Number - Text` 헤더 전까지** 동일 kind를 Fund 있는 거래 행에 적용 |
 | — | 적재 게이트 | **Fund만 비어 있지 않으면** 적재 (Debit/Credit 0 허용) |
@@ -44,7 +44,7 @@
 
 ### 구간 겹침
 
-- Income 4300–4510, Expense 5180–9010, Expense prefix `1865` — 서로 겹치지 않음.
+- Income 4300–4510, Expense 5120–9010, Expense prefix `1865` — 서로 겹치지 않음.
 - 4511–5179 등: 헤더는 Number - Text이지만 kind 미설정 → sticky만 유지.
 
 ---
@@ -156,6 +156,7 @@ FOR each row after header:
 ## 9. 검증 체크리스트
 
 - [ ] Number - Text 아닌 Name-only 행 → DB 0건, section 미갱신
+- [ ] `5120 - …` (Pension 등) 이후 Fund 행 → `income_expense_kind=Expense`
 - [ ] `5180 - …` 이후 Fund 행 → `income_expense_kind=Expense`
 - [ ] `4300 - …` 이후 Fund 행 → `Income`
 - [ ] 구간 밖 `4600 - …` → kind 변경 없음 (sticky)

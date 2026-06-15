@@ -45,12 +45,14 @@ func TestClassifyAccountCode(t *testing.T) {
 		{"1865.1", incomeExpenseKindExpense},
 		{"1865.5", incomeExpenseKindExpense},
 		{"18650", incomeExpenseKindExpense},
+		{"5120", incomeExpenseKindExpense},
 		{"5180", incomeExpenseKindExpense},
+		{"5179", incomeExpenseKindExpense},
+		{"5119", ""},
 		{"9010", incomeExpenseKindExpense},
 		{"4300", incomeExpenseKindIncome},
 		{"4510", incomeExpenseKindIncome},
 		{"4600", ""},
-		{"5179", ""},
 		{"9011", ""},
 	}
 	for _, tc := range cases {
@@ -117,6 +119,31 @@ func TestParseGeneralLedgerDetailLines_1865Subaccount(t *testing.T) {
 	}
 	if lines[0].accountCode.String != "1865.1" {
 		t.Fatalf("account_code=%q", lines[0].accountCode.String)
+	}
+}
+
+func TestParseGeneralLedgerDetailLines_5120PensionExpense(t *testing.T) {
+	t.Parallel()
+	header := []string{"Name", "Date", "", "Type", "", "", "", "", "Fund", "", "", "", "Debit", "Credit", "Amount", "Balance"}
+	rows := [][]string{
+		header,
+		{"4510 - Vision 123 Contributions", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""},
+		{"", "01/15/2026", "", "Check", "", "", "", "", "TR-Vision 123", "", "", "", "", "100", "100", ""},
+		{"5120 - Pension", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""},
+		{"", "01/16/2026", "", "Check", "", "", "", "", "DF-Staff Pension", "", "", "", "", "50", "50", ""},
+	}
+	lines, err := parseGeneralLedgerDetailLines(rows, 0)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(lines) != 2 {
+		t.Fatalf("got %d lines, want 2", len(lines))
+	}
+	if lines[1].fundName != "DF-Staff Pension" || lines[1].incomeExpenseKind != incomeExpenseKindExpense {
+		t.Fatalf("pension line: fund=%q kind=%q", lines[1].fundName, lines[1].incomeExpenseKind)
+	}
+	if lines[1].accountCode.String != "5120" {
+		t.Fatalf("account_code=%q", lines[1].accountCode.String)
 	}
 }
 

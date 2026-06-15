@@ -142,7 +142,7 @@ func classifyAccountCode(code string) string {
 	if n >= 4300 && n <= 4510 {
 		return incomeExpenseKindIncome
 	}
-	if n >= 5180 && n <= 9010 {
+	if n >= 5120 && n <= 9010 {
 		return incomeExpenseKindExpense
 	}
 	return ""
