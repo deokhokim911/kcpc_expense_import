@@ -41,7 +41,10 @@ func TestHandleMinistryBalanceDryRun(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	n := handleMinistryBalance(nil, rows, true)
+	n, err := handleMinistryBalance(nil, rows, true, newExpenseSummaryCollector())
+	if err != nil {
+		t.Fatal(err)
+	}
 	if n == 0 {
 		t.Fatal("expected at least one processed ministry ledger row")
 	}

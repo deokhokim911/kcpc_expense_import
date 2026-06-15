@@ -57,6 +57,7 @@ flowchart LR
 - [`2026/migration.sql`](migration.sql)
 - [`2026/20260508120000_add_fund_activity_detail_line/migration.sql`](20260508120000_add_fund_activity_detail_line/migration.sql)
 - [`2026/20260508130000_add_income_expense_kind/migration.sql`](20260508130000_add_income_expense_kind/migration.sql)
+- [`2026/20260606120000_add_org_expense_summary/migration.sql`](20260606120000_add_org_expense_summary/migration.sql) — 사역원·부서 지출 summary (선택, UI 무변경)
 
 ---
 
