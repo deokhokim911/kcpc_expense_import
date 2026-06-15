@@ -129,14 +129,10 @@ func isValidCode(id, fiscalYear int, db *sql.DB) error {
 }
 
 func updateBudgetBalance(update Budget_Balance, db *sql.DB) (int, error) {
-	return insertBudgetBalance(db, update)
-}
-
-func insertBudgetBalance(q queryRower, update Budget_Balance) (int, error) {
 	sqlStatment := "INSERT INTO public.org_balance (fiscalyear, budget_cd, create_dt, segment1, segment2, segment3, account_id, accountdesc, reference, jrnl_cd, transdesc, debitamt, creditamt, total_cost, balance, job_id, transamt) VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17) RETURNING orgbal_id;"
 
 	var orabal_id int
-	err := q.QueryRow(sqlStatment,
+	err := db.QueryRow(sqlStatment,
 		update.fiscalyear,
 		update.budget_cd,
 		update.create_dt,
@@ -283,11 +279,7 @@ func loadWorksheetRows(path string) ([][]string, error) {
 	return f.GetRows(sheet)
 }
 
-type queryRower interface {
-	QueryRow(query string, args ...any) *sql.Row
-}
-
-func handleMinistryBalance(q queryRower, rows [][]string, quiet bool, collector *expenseSummaryCollector) (int, error) {
+func handleMinistryBalance(db *sql.DB, rows [][]string, quiet bool) int {
 	var account_cd int
 	var accountName string
 
@@ -410,22 +402,20 @@ func handleMinistryBalance(q queryRower, rows [][]string, quiet bool, collector 
 			if !quiet {
 				fmt.Println("MinistryBalance >>> ", balance_budget)
 			}
-			if collector != nil {
-				collector.add(balance_budget, rec[9], rec[10])
-			}
 			processed++
-			if q != nil {
-				noRow, err := insertBudgetBalance(q, balance_budget)
+			if db != nil {
+				noRow, err := updateBudgetBalance(balance_budget, db)
 				if err != nil {
-					return processed, fmt.Errorf("insert org_balance segment3=%d segment1=%d: %w", balance_budget.segment3, balance_budget.segment1, err)
+					log.Println("Error : ", err.Error())
+				} else {
+					log.Println("Row Inserted : ", noRow)
 				}
-				log.Println("Row Inserted : ", noRow)
 			}
 
 			previous_balance = balance_budget
 		}
 	}
-	return processed, nil
+	return processed
 }
 
 func main() {
@@ -559,9 +549,22 @@ func main() {
 	}
 	fmt.Println("Successfully connected!")
 
-	if err := runMinistryOrgBalanceImport(db, *ministryLedgerXlsx, fiscalYear, *quiet); err != nil {
+	if fiscalYear > 2020 {
+		sqlStatment := fmt.Sprintf("delete from public.org_balance where fiscalyear = %d;", fiscalYear)
+		log.Println("sqlStatment : ", sqlStatment)
+
+		_, err = db.Exec(sqlStatment)
+		if err != nil {
+			log.Fatalf("Failed to insert data: %v", err)
+		}
+		fmt.Println("Data Deleted successfully!, fiscal year = ", fiscalYear)
+	}
+
+	ministryRows, err := loadWorksheetRows(*ministryLedgerXlsx)
+	if err != nil {
 		log.Fatal(err)
 	}
+	handleMinistryBalance(db, ministryRows, *quiet)
 }
 
 func runMinistryOrgBalanceDryRunPreview(ministryLedgerPath string, quiet bool) error {
@@ -588,24 +591,11 @@ func runMinistryOrgBalanceDryRunPreview(ministryLedgerPath string, quiet bool) e
 	if err != nil {
 		return fmt.Errorf("ministry ledger: %w", err)
 	}
-	collector := newExpenseSummaryCollector()
-	nInsert, err := handleMinistryBalance(nil, ministryRows, quiet, collector)
-	if err != nil {
-		return err
-	}
-	deptN := collector.departmentCount()
-	ministryN := collector.ministryCount()
-
-	hasSummary, _ := tableExists(db, "org_balance_import_run")
+	nInsert := handleMinistryBalance(nil, ministryRows, quiet)
 
 	fmt.Printf("[dry-run] file_ministry_ledger=%s\n", filepath.Base(ministryLedgerPath))
 	fmt.Printf("[dry-run] org_balance planned_delete fiscalyear=%d count=%d\n", fiscalYear, deleteCnt)
 	fmt.Printf("[dry-run] org_balance planned_insert count=%d\n", nInsert)
 	fmt.Printf("[dry-run] ministry ledger rows processed: %d\n", nInsert)
-	if hasSummary {
-		fmt.Printf("[dry-run] org_expense_summary planned_insert department=%d ministry=%d\n", deptN, ministryN)
-	} else {
-		fmt.Printf("[dry-run] org_expense_summary skipped (migration not applied)\n")
-	}
 	return nil
 }
